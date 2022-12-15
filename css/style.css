@@ -1,0 +1,964 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("/Users/tatianagortanova/Desktop/Diploma Module 2/Font/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("/Users/tatianagortanova/Desktop/Diploma Module 2/Font/OpenSans-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+/*header*/
+.header {
+  min-width: 1220px;
+  background-color: #000000;
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding: 30px 15px 100px 15px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.header__inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 1170px;
+}
+
+.header__logo {
+  width: 180px;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+.nav__list:nth-child(n+2) {
+  margin-left: 35px;
+}
+
+.nav__link:after {
+  content:"";
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;  
+  z-index: 1;
+  left: 0;
+  transition: color .1s linear;
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}
+
+.header-title {
+  display: block;
+  width: 690px;
+  margin-left: auto;
+  margin-right: auto; 
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 1.65;
+  font-family: OpenSans-Bold, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*main page.blog*/
+
+/*trends*/
+
+.trends__title {
+  display: flex;
+  justify-content: center;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+
+.trends__title:after {
+  content:"";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 40%;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+}
+
+.trends__section {
+  box-sizing: border-box;
+  min-width: 1220px;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.trends__container {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.trend {
+/*  background-image: url("images/trend1.jpg");*/
+  width: 25%;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 0;
+} 
+
+.trend:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.trend:nth-child(n+2) {  
+   margin-left: 4px; 
+}
+    
+.trend1 {
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/images/trend1.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+/*  position: relative;
+  z-index: 0;*/
+}  
+
+.trend2 {
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/images/trend2.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+/*  position: relative;
+  z-index: 0;*/
+}  
+
+.trend3 {
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/images/trend3.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+/*  position: relative;
+  z-index: 0;*/
+}   
+
+.trend4 {
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/images/trend4.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+/*  position: relative;
+  z-index: 0;*/
+}   
+
+
+.trend__content {
+  border: 3px solid rgba(181, 159, 91);
+  padding: 15px;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+/*  z-index: 383;*/
+
+}
+
+.trend__title {
+  font-family: OpenSans-Bold, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.trend__title:hover {
+  color: #b59f5b;
+}
+/*.trends__section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+*/
+
+
+
+
+/*trends*/
+
+/*shop*/
+
+
+
+
+
+
+
+
+/*shop*/
+
+
+.main-page-content {
+  min-width: 1220px;
+} 
+
+.main-page {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px; 
+  padding: 64px 15px 44px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 778px;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.blog:nth-child(n+2) {
+  margin-top: 55px;
+}
+
+.blog-preview{
+  box-sizing: border-box;
+  width: 381px;  
+}
+
+.blog-image {
+  width: 381px;
+  object-fit: cover; 
+}
+
+.blog-info {
+  margin-left: 30px;
+  background-color: #ffffff;
+}
+
+.blog-tags-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-tag {
+  margin-right: 18px;
+}
+
+.blog-tag:last-child {
+  padding-right: 0;
+}
+
+.blog-tag-link {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #b59f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.blog-tag-link:hover {
+  border-bottom: 1px solid #b59f5b;
+}
+
+h2 {
+  margin: 0;
+}
+
+.blog-title {
+  font-family: OpenSans-Bold, sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.blog-title:hover {
+  color: #b59f5b;
+}
+
+.date-autor {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.last-blog-date {
+  font-family: OpenSans-Regular, sans-serif;
+  color: #888888;
+  margin-right: 10px;
+}
+
+.blog-article {
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 15px;
+  
+}
+
+/*main page.sidebar*/
+.sidebar {
+  width: 272px;
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: center;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__title:after {
+  content:"";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 40%;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+}
+
+.sidebar-post {
+  margin-top: 35px;
+}
+
+.new__posts {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.new__posts:nth-child(n+2) {
+  margin-top: 22px;
+}
+
+.post-preview {
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;  
+}
+
+.post-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover; 
+}
+
+.post-info {
+  margin-left: 20px;
+}
+
+.last-post-date {
+  display: block;
+  font-family: OpenSans-Regular, sans-serif;
+  color: #888888;
+  font-size: 12px;
+  padding: 0;
+}
+
+.post-title {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.post-title-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.post-title-link:hover {
+  color: #b59f5b;
+}
+
+.search {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 225px;
+  height: 47px;
+  border: none;
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 13px;  
+  background-color: #f4f7f6;
+  padding-left: 20px;
+}
+
+.field:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+
+.search-button {
+  width: 47px;
+  height: 47px;
+  border: none;
+  background-color: #b59f5b;
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/search.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-button:hover {
+  background-color: #323232;
+}
+
+.email__field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 47px;
+  border: none;
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 13px;  
+  background-color: #f4f7f6;
+  padding: 0px 20px;
+  margin-top: 35px;
+}
+
+.email__field:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+
+.subscribe-button {
+  width: 100%;
+  height: 47px;
+  border: none;
+  background-color: #b59f5b;
+  font-family: OpenSans-bold, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.subscribe-button:hover {
+  background-color: #323232;
+}
+
+.sidebar__tags {
+ display: flex;
+ flex-wrap: wrap;
+ list-style-type: none;
+ padding: 0;
+ margin-top: 30px;
+ margin-bottom: 50px;
+}
+
+.tags {
+  display: block;
+  margin: 7px 8px 0px 0px;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 13px;
+  text-decoration: none;
+  color: #000000;
+  border: 3px solid #f4f3f1;
+  text-align: center;
+}
+
+.tags:hover {
+  border: 3px solid #b59f5b;
+}
+
+.categories {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.categories__link {
+  margin-top: 11px;
+  padding-bottom: 15px; 
+  border-bottom: 1px solid #eeeeee;
+}
+
+.link {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.link:hover {
+  color: #b59f5b;
+}
+
+.sub {
+  color: #b59f5b;
+  vertical-align: top;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.footer {
+  width: 1220px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.social-icons {
+  box-sizing: border-box;
+  width: 1170px;
+  background-color: #f4f7f6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 73px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 30px 0px 30px;
+}
+
+.social-icon-list {
+  margin-right: 30px;
+}
+
+.social-icon-list:last-child {
+  margin-right: 0;
+}
+
+.social-icon-link {
+  display: block;
+}
+
+.social-icon__dribbble {
+  background: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/001-dribbble.svg") no-repeat;
+  width: 20px;
+  height: 20px;  
+}
+
+.social-icon__pinterest {
+  background: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/002-pinterest.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon__tumblr {
+  background: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/003-tumblr.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.copyrights {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #999999;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*SHOP*/
+
+.shop__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop__box {
+  margin-bottom: 65px;
+}
+
+.shop__card {
+  width: 345px;
+  height: 430px;
+}
+
+.card__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+
+.card__img::before {
+  content: "";
+  background-color: #000;
+  width: 300px;
+  height: 204px;
+  opacity: 0.6;
+}
+
+.card__border {
+  border: 3px solid #b59f5b;
+  z-index: 2;
+  height: 265px;
+  padding: 20px;
+  position: relative;
+  margin-top: -40px;
+}
+
+.card__title {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+.card__text {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 17px;
+}
+
+.card__text__link {
+  color: #b59f5b;
+}
+
+.card__text__link:hover {
+  text-decoration: underline;
+}
+
+.card__price {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  color: #fff;
+  background-color: #b59f5b;
+  border: 1px solid #b59f5b;
+  cursor: pointer;
+  width: 140px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card__button:hover {
+  background-color: #0f0d0e;
+}
+
+.sum__text {
+  text-decoration: line-through;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sum__text__fin {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.fin__one {
+  margin-top: 20px;
+}
+
+.box__links {
+  background-color: #f4f7f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.links__icon {
+  margin: 0 10px;
+}
+
+.icon__img {
+  width: 20px;
+}
+
+.sign {
+  margin: 72px auto 40px auto;
+}
+
+.sign__text {
+  text-align: center;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+/*SHOP */
+
+/*POPUP*/
+
+.pop__up {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.main__container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main__container:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.popup__box{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  max-width: 390px;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  padding: 55px 30px;
+}
+
+.button__close {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  right: 0;
+  top: -26px;
+  border: none;
+  background-color: transparent;
+}
+
+.popup__title {
+  display: flex;
+  justify-content: center;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.popup__title:after {
+  content:"";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 40%;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+}
+
+.form__title {
+  margin: 0;
+}
+
+.form__box {
+  margin-top: 30px;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.form__frequency {
+  display: flex;
+  flex-direction: column;
+}
+
+.frequency_text {
+  margin-bottom: 24px;
+}
+
+.frequency__field {
+/*  appearance: none;*/
+  height: 45px;
+  border: none;
+  background-color: #f4f7f6;
+  background-image: url("/Users/tatianagortanova/Desktop/Diploma Module 2/SVG/form-arrows");
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: top 16px right 15px;
+}
+
+.frequency__field:focus {
+  border-radius: 1px solid #b59f5b;
+  border-top: #fff; 
+}
+
+.form__radio__button {
+  margin-top: 35px;
+}
+
+.radio__button {
+  margin-top: 18px;
+}
+
+.button__choice_dots {
+  display: none;
+}
+
+.radio_button_text {
+  height: 100%;
+}
+
+.radio_button_text:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: left;
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+
+.button__choice_dots:checked + .radio_button_text:before {
+  background-image: url(../img/form-circle.svg);
+}
+
+.form__area {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.area__text {
+  margin-bottom: 11px;
+}
+
+.textarea {
+  max-width: 100%;
+  max-height: 130px;
+  border: none;
+  background-color: #f4f7f6;
+}
+
+.textarea:focus {
+  border: none;
+  border-bottom: 1px solid #b59f5b;
+}
+
+.textarea:placeholder {
+  padding: 20px;
+}
+
+.form__button {
+  margin-top: 25px;
+  color: #fff;
+  background-color: #b59f5b;
+  border: 1px solid #b59f5b;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 20px auto;
+  cursor: pointer;
+}
